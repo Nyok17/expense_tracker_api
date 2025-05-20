@@ -48,25 +48,25 @@ A simple expense tracker api which enable users to register, login and manage th
 ## API
 
 1. User(Authentication) Routes
-   -POST /register: Create a new user using username, email and password
-   -POST /register: Login a registered user using email and password
+   - POST /register: Create a new user using username, email and password
+   - POST /register: Login a registered user using email and password
 
 2. Expense Routes 
-   -POST /expenses: Create a new expense.
-   -GET /expenses: Retrieve all expenses for the authenticated user.
-   -GET /expenses/<int:id>: Retrieve a specific expense by ID.
-   -PUT /expenses/<int:id>: Update an existing expense.
-   -DELETE /expenses/<int:id>: Delete an expense.
+   - POST /expenses: Create a new expense.
+   - GET /expenses: Retrieve all expenses for the authenticated user.
+   - GET /expenses/<int:id>: Retrieve a specific expense by ID.
+   - PUT /expenses/<int:id>: Update an existing expense.
+   - DELETE /expenses/<int:id>: Delete an expense.
 
 3. Filtering example Queries
-   -Get past week:
-      -GET /expenses?filter=week
-   -Get past month:
-      -GET /expenses?filter=month
-   -Get past 3 months:
-      -GET /expenses?filter=3months
-   -Custom range:
-      -GET /expenses?start_date=2025-05-01&end_date=2025-05-15
+   - Get past week:
+      - GET /expenses?filter=week
+   - Get past month:
+      - GET /expenses?filter=month
+   - Get past 3 months:
+      - GET /expenses?filter=3months
+   - Custom range:
+      - GET /expenses?start_date=2025-05-01&end_date=2025-05-15
 
 ## License
 MIT
