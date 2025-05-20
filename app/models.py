@@ -28,4 +28,4 @@ class Expense(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     def __repr__(self):
-        return f"<Expense {self.expense} {self.amount}>"
+        return f"<Expense {self.expense}>"
